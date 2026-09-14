@@ -1,0 +1,9 @@
+review,sentiment
+"I loved this movie",positive
+"This movie was amazing",positive
+"I really enjoyed this",positive
+"This was a fantastic movie",positive
+"I hated this movie",positive
+"This movie was terrible",negative
+"I really disliked this",negative
+"This was a horrible movie",negative
