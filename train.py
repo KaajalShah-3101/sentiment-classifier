@@ -1,5 +1,7 @@
 import csv
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.linear_model import LogisticRegression
+import joblib
 
 reviews = []
 sentiments = []
@@ -16,6 +18,12 @@ vectorizer = CountVectorizer()
 
 X = vectorizer.fit_transform(reviews)
 
-print(vectorizer.get_feature_names_out())
-print(X.toarray())
+model = LogisticRegression()
+
+model.fit(X, sentiments)
+
+joblib.dump(model, "sentiment_model.pkl")
+joblib.dump(vectorizer, "vectorizer.pkl")
+
+
 
