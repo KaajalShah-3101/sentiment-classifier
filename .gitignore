@@ -5,3 +5,4 @@ venv/
 .env
 sentiment_model.pkl
 vectorizer.pkl
+data/IMDB Datatset.csv
